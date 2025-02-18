@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Read and update content attributes accordingly  -->
+
+    <meta
+      name="description"
+      content="Welcome to my portfolio website. I am a Android developer and I specialize in creating user-friendly, responsive and accessible apps. Explore my projects, open-source work and contact me for any inquiries or collaborations."
+    />
+
+    <!-- Google / Search Engine Tags -->
+<meta itemprop="name" content="Adarsh Kumar Maurya's Portfolio">
+<meta itemprop="description" content="Welcome to my portfolio website. I am an Android Developer and I specialize in creating user-friendly, responsive and accessible apps. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+<!-- Reference screenshot of updated site's header in place of content -->
+<meta itemprop="image" content="assets/images/sharing-card.png">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Adarsh Kumar Maurya's Portfolio">
+<meta property="og:description" content="Welcome to my portfolio website. I am an Android developer and I specialize in creating user-friendly, responsive and accessible apps. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Adarsh Kumar Maurya's Portfolio">
+<meta name="twitter:description" content="Welcome to my portfolio website. I am an Android developer and I specialize in creating user-friendly, responsive and accessible apps. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+
+
+<!-- Update favicon href attribute with image of yourself -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/png"
+    />
+
+    <!-- Preloading fonts for better performance -->
+
+    <link
+      rel="preload"
+      href="assets/fonts/Mona-Sans.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="style.css"  />
+    <script src="script.js" defer></script>
+
+    <!-- Your name here -->
+    <title>Adarsh Kumar Maurya's Portfolio</title>
+  </head>
+
+  <body>
+
+    <script>
+      const theme = localStorage.getItem("theme") || "dark";
+      document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+
+      <div class="menu-btn-container">
+        <div class="container">
+          <button type="button"  class="menu-btn">menu</button>
+        </div>
+      </div>
+
+      <nav class="nav hidden">
+        <ol class="nav-items">
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#work">My Project</a></li>
+          <!-- <li class="nav-item"><a href="#blog">See Blog</a></li> -->
+          <li class="nav-item"><a href="#skills">My Skills</a></li>
+          <li class="nav-item">
+            <a href="#contact" data-focused="last-focused">Contact</a>
+          </li>
+        </ol>
+      </nav>
+
+      <div class="container">
+        <div class="header-textbox">
+          <!-- Replace with your name and job title -->
+          <h1 class="h1">
+            <span>Hi, I'm Adarsh Kumar Maurya</span>
+            <span>Android Developer</span>
+          </h1>
+
+          <!-- Add a small introductory paragraph about yourself -->
+          <p class="header-text">
+            A passionate and skilled Android Developer specializing in Jetpack Compose, with hands-on experience in AWS cloud services, backend development, and open-source
+          </p>
+
+          <div class="header-btns">
+            <a href="#contact" class="btn btn-cta">Hire me</a>
+            <a href="#work" class="btn btn-secondary">See my Projects</a>
+          </div>
+          <nav style="padding: 5%;">
+            <ol class="footer-links">
+              <li class="footer-link">
+                <a title="GitHub" href="https://github.com/akmaurya7" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/github.svg"
+                    alt="GitHub"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Linkedin" href="https://www.linkedin.com/in/akmaurya7/" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/linkedin.svg"
+                    alt="Linkedin"
+                /></a>
+              </li>
+              <li class="footer-link">
+                <a title="Twitter" href="https://x.com/amaurya4570" target="_blank" rel="noopener"
+                  ><img
+                    loading="lazy"
+                    src="assets/images/social-links/twitter.svg"
+                    alt="Twitter"
+                /></a>
+              </li>
+            </ol>
+          </nav>
+
+
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="work">
+        <div class="container">
+          <h2 class="h2" id="work">My Project</h2>
+          <div class="work-boxes">
+
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">Event Hive</h3>
+                <!-- Add small description of your project  -->
+                <p class="work-text">
+                  An easy to use native Android application where you can organize and manage all you Event together .
+                </p>
+                <!-- Add technologies you used to build the project -->
+                <ol class="work-technologies">
+                  <li>Kotlin</li>
+                  <li>Jetpack Compose</li>
+                  <li>Firebase</li>
+                  <li>MVVM</li>
+                </ol>
+
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="https://github.com/Dibyajyoti-Raj/EventHive" target="_blank" rel="noopener" class="link"
+                    >Explore this project</a
+                  >
+
+                  <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                  <a
+                    href="https://github.com/Dibyajyoti-Raj/EventHive"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                  
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <!-- Update img src and alt attribute  -->
+
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/EventHive.png"
+                  alt="agency elevation"
+                />
+              </picture>
+            </div>
+
+            <!-- Second Project -->
+
+            <div class="work-box">
+              <div class="work-textbox">
+                <!-- Add your project title here -->
+                <h3 class="h3">Chatting App</h3>
+                <!-- Add small description of your project  -->
+                <p class="work-text">
+                  An easy to use native Android chatting application where you can chat with authenticatd user .
+                </p>
+                <!-- Add technologies you used to build the project -->
+                <ol class="work-technologies">
+                  <li>Kotlin</li>
+                  <li>Jetpack Compose</li>
+                  <li>Dagger-Hilt</li>
+                  <li>Firebase</li>
+                  <li>MVVM</li>
+                </ol>
+
+                <div class="work-links">
+                  <!-- Add url of project in href attribute -->
+                  <a href="https://github.com/akmaurya7/ChattingApp" target="_blank" rel="noopener" class="link"
+                    >Explore this project</a
+                  >
+
+                  <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
+                  <a
+                    href="https://github.com/akmaurya7/ChattingApp"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                  
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <!-- Update img src and alt attribute  -->
+
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/portfolio-template.webp"
+                  alt="agency elevation"
+                />
+              </picture>
+            </div>
+
+
+            <!-- Third Project -->
+
+            <div class="work-box">
+              <div class="work-textbox">
+                <h3 class="h3">Calculator</h3>
+
+                <p class="work-text">Calculator for arithematic operation.</p>
+                <ol class="work-technologies">
+                  <li>Kotlin</li>
+                  <li>XML</li>
+                  <li>Material UI</li>
+                </ol>
+                <div class="work-links">
+
+                  <a href = "https://github.com/akmaurya7/BestCalculator" target="_blank" rel="noopener" class="link"
+                    >Explore this project</a
+                  >
+
+                     <a
+                    href="https://github.com/akmaurya7/BestCalculator"
+                    target="_blank"
+                    rel="noopener"
+                    title="Source code"
+                  >
+                    <img
+                      src="assets/images/social-links/github.svg"
+                      alt="GitHub"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div> 
+                <!-- Update img src and alt attribute  -->
+              <picture class="work-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/work/agency-elevation.webp"
+                  alt="portfolio template"
+                />
+              </picture> 
+            </div>
+            
+            
+          </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="certificate">
+        <div class="container">
+          <h2 class="h2" id="certificate">My Certificates</h2>
+          <div class="certificate-grid">
+            
+            <!-- First Certificate -->
+            <div class="certificate-box">
+              <picture class="certificate-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/certificate/Certificate for ADARSH KUMAR MAURYA_page-0001.jpg"
+                  alt="Postman API Fundamentals Certificate"
+                />
+              </picture>
+              <div class="certificate-details">
+                <h3 class="h3">Certificate of Completion Android development Internship <br> <br></h3>
+                <p>
+                  Skilled in App development using Jetpack Compose to create responsive Ui and Firebase for backend.
+                  <br>
+                  <br>
+                </p>
+                <ul>
+                  <li>Intern At : Ingenious Tech</li>
+                  <li>Date: October 2024</li>
+                </ul>
+                <a href="https://github.com/akmaurya7/certificate/blob/main/Certificate%20for%20ADARSH%20KUMAR%20MAURYA_page-0001.jpg" target="_blank" rel="noopener" class="link">
+                  View Certificate
+                </a>
+              </div>
+            </div>
+      
+            <!-- Second Certificate -->
+            <div class="certificate-box">
+              <picture class="certificate-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/certificate/ADARSH KUMAR MAURYA aws_page-0001.jpg"
+                  alt="HackerRank Problem Solving Certificate"
+                />
+              </picture>
+              <div class="certificate-details">
+                <h3 class="h3">Certificate for Completion AWS Internship <br> <br></h3>
+                <p>
+                  Skilled in Cloud Computing, created ec2 instances, load balancing, Route 53, S3 bucket.
+                  <br><br>
+                </p>
+                <ul>
+                  <li>Intern at : Ingenious Tech</li>
+                  <li>Date: September 2023</li>
+                </ul>
+                <a href="https://github.com/akmaurya7/certificate/blob/main/ADARSH%20KUMAR%20MAURYA%20aws_page-0001.jpg" target="_blank" rel="noopener" class="link">
+                  View Certificate
+                </a>
+              </div>
+            </div>
+
+            <!-- Third Certificate -->
+            <div class="certificate-box">
+              <picture class="certificate-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/certificate/Gssoc.jpg"
+                  alt="HackerRank Problem Solving Certificate"
+                />
+              </picture>
+              <div class="certificate-details">
+                <h3 class="h3">Certificate of Participation <br>(GSSoC 2024) <br><br> </h3>
+                <p>
+                  Participate in Open-Source contribution, cuducted by GirlScript Summer of Code (2024).
+                  <br><br>
+                </p>
+                <ul>
+                  <li>Issued by: GSSoC</li>
+                  <li>Date: November 2024</li>
+                </ul>
+                <a href="https://github.com/akmaurya7/certificate/blob/main/Gssoc.jpg" target="_blank" rel="noopener" class="link">
+                  View Certificate
+                </a>
+              </div>
+            </div>
+            
+            <!-- Fourth Certificate -->
+            <div class="certificate-box">
+              <picture class="certificate-img">
+                <img
+                  loading="lazy"
+                  src="assets/images/certificate/Postman.jpg"
+                  alt="HackerRank Problem Solving Certificate"
+                />
+              </picture>
+              <div class="certificate-details">
+                <h3 class="h3">Postman Api Fundamentals Student Expert <br><br></h3>
+                <p>
+                  Achieved certification by diving into the Api fundamental by doing GET,POST,DELETE,PUT operation. <br><br>
+                </p>
+                <ul>
+                  <li>Issued by: Postman</li>
+                  <li>Date: October 2024</li>
+                </ul>
+                <a href="https://github.com/akmaurya7/certificate/blob/main/Postman.jpg" target="_blank" rel="noopener" class="link">
+                  View Certificate
+                </a>
+              </div>
+            </div>
+                
+      
+          </div>
+        </div>
+      </section>
+      
+      
+      <section class="skills">
+        <div class="container">
+          <h2 class="h2" id="skills">My Toolkit</h2>
+          <div class="skills-imgs">
+                <img src="https://skillicons.dev/icons?i=kotlin" alt="Kotlin" class="skills-img" loading="lazy" title="Kotlin">
+                <img src="https://skillicons.dev/icons?i=java" alt="java" class="skills-img" loading="lazy" title="java">
+                <img src="https://skillicons.dev/icons?i=python" alt="python" class="skills-img" loading="lazy" title="python">
+                <img src="https://skillicons.dev/icons?i=cpp" alt="cpp" class="skills-img" loading="lazy" title="cpp">
+                <img src="https://skillicons.dev/icons?i=c" alt="c" class="skills-img" loading="lazy" title="c">
+                <img src="https://skillicons.dev/icons?i=firebase" alt="firebase" class="skills-img" loading="lazy" title="firebase">
+                <img src="https://skillicons.dev/icons?i=aws" alt="aws" class="skills-img" loading="lazy" title="aws">
+                <!-- <img src="https://skillicons.dev/icons?i=gcp" alt="gcp" class="skills-img" loading="lazy" title="gcp"> -->
+                <!-- <img src="https://skillicons.dev/icons?i=mysql" alt="mysql" class="skills-img" loading="lazy" title="mysql"> -->
+                <img src="https://skillicons.dev/icons?i=mongodb" alt="mongodb" class="skills-img" loading="lazy" title="mongodb">
+                <img src="https://skillicons.dev/icons?i=androidstudio" alt="androidstudio" class="skills-img" loading="lazy" title="androidstudio">
+                <!-- <img src="https://skillicons.dev/icons?i=gradle" alt="gradle" class="skills-img" loading="lazy" title="gradle"> -->
+                <!-- <img src="https://skillicons.dev/icons?i=git" alt="git" class="skills-img" loading="lazy" title="git"> -->
+                <img src="https://skillicons.dev/icons?i=github" alt="github" class="skills-img" loading="lazy" title="github">
+                <!-- <img src="https://skillicons.dev/icons?i=postman" alt="postman" class="skills-img" loading="lazy" title="postman"> -->
+                <img src="https://skillicons.dev/icons?i=html" alt="html" class="skills-img" loading="lazy" title="html">
+                <img src="https://skillicons.dev/icons?i=css" alt="css" class="skills-img" loading="lazy" title="css">
+                <img src="https://skillicons.dev/icons?i=js" alt="js" class="skills-img" loading="lazy" title="js">
+                <img src="https://skillicons.dev/icons?i=ktor" alt="ktor" class="skills-img" loading="lazy" title="ktor">
+                <img src="https://skillicons.dev/icons?i=nodejs" alt="nodejs" class="skills-img" loading="lazy" title="nodejs">
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <h2 class="h2" id="contact">Send Message</h2>
+          <div class="contact-content">
+            <div class="contact-textbox">
+              <!-- Please comment this component if you're not available for hire -->
+              <strong href="#" class="hire-alert">
+                <span class="indicator"></span>
+                Available for hire
+              </strong>
+              <p class="contact-text">
+                As an Android Developer, I create App interfaces and design with a special love for accessibility and the
+                performance. I tend to code things from scratch and enjoy
+                bringing ideas to life.
+              </p>
+              <p class="contact-text">
+                I'm also an open-source developer, and in my spare time, I design
+                awsome app.
+              </p>
+              <!-- Replace src with your signatures and name -->
+              <img
+                src="assets/images/sign.webp"
+                alt="Adarsh"
+                class="signatures"
+                loading="lazy"
+              />
+            </div>
+            <form action="#" class="contact-form" netlify>
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  inputmode="email"
+                />
+              </div>
+              <div class="form-field">
+                <label for="message">How can I help you?</label>
+                <textarea name="message" id="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-cta">Send</button>
+            </form>
+          </div>
+            <label class="theme-switch" for="theme-switch">
+              <span>Dark Theme</span>
+              <input type="checkbox" id="theme-switch" role="switch"/>
+            </label>
+        </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
